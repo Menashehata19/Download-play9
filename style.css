@@ -4,6 +4,12 @@ body{
   transition: background-color .4s, color 0.3s;
   -webkit-transition: background-color 0.3s, color 0.3s;
   font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body::selection{
+background: transparent;
 }
 
 :root {
@@ -1180,13 +1186,16 @@ top: 20px;
 
 
 #bardownplay{
-  width: 90%;
-  height: 150px;
-  background: transparent;
+  width: 95%;
+  height: 140px;
+  background-image: url('snapedit_1722445123731.jpeg.png');
+
+  background-size: cover;
   top: 10px;
   left: 2.5%;
   position: relative;
-  border-radius: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 #play-desighn1{
@@ -1195,7 +1204,7 @@ top: 20px;
   background: transparent;
   border-radius: 5px;
   height: 50px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 0px;
     
   justify-content: space-around;
@@ -1208,7 +1217,7 @@ top: 20px;
   width: 45px;
   height: 45px;
   border-radius: 5px;
-  
+
 }
 #play-desighn1 div{
   
@@ -1217,8 +1226,9 @@ top: 20px;
   
   justify-content: space-around;
   display: flex;
-  background: #1B1E25; 
+  background: #1B1E25;
   border-radius: 8px;
+  margin-top: 12px;
 }
 
 #play-desighn2{
@@ -1233,23 +1243,30 @@ top: 20px;
     
   justify-content: space-around;
   display: flex;
+
 }
 
 #play-desighn2 img{
   width: 45px;
   height: 45px;
   border-radius: 5px;
+
 }
 
 #play-desighn2 div{
   width: 45px;
   height: 45px;
-
-  background: #1B1E25; 
-  border-radius: 8px;
-  
+  background: #1B1E25;
+  border-radius: 5px;
+  margin-top: 12px;
 }
 
+
+#searchInput::placeholder{
+  position: relative;
+  left: 7px;
+  color: #969FAF;
+}
 
 #upbuttonscrool{
   
@@ -1272,6 +1289,38 @@ top: 20px;
 
 
 
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 97%;
+    left: 1.5%;
+    top: 70px;
+    height: 300px;
+    border: solid #FFFFFF36 1.8px;
+    overflow: scroll;
+    border-radius: 7px;
+    background: #F1F1F1F7;
+}
+
+#myUL li a {
+    border: 1px solid #ECECEC4A;
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: #FFFFFFED;
+    padding: 11px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #242424;
+    display: block;
+    border-radius: 4px;
+    margin: 3px;
+    backdrop-filter: blur(9px);
+    border: solid 1px #9393932E;
+}
+
+
 
 #txtdesighn{
   
@@ -1288,6 +1337,49 @@ top: 20px;
   
   
 }
+
+#searchback input{
+  
+  width: 60%;
+  position: absolute;
+  left: 6%;
+  border-radius: 8px;
+  height: 30px;
+  border: solid 2px #EBECF0;
+  top: 20px;
+  background: #EBECF0;
+  outline: none;
+  box-shadow: 0px 0px 3px #FFFFFF;
+  
+}
+
+#hr-lineinp{
+  width: 33.5px;
+  rotate: 90deg;
+  position: absolute;
+  left: 50%;
+  top: 29px;
+  border: solid .9px #A8ADBC75;
+}
+
+
+#searchback svg{
+
+width: 26px;
+z-index: 999;
+position: absolute;
+top: -6px ;
+left: 57%;
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -1326,7 +1418,7 @@ top: 20px;
 #bardownplay{
   width: 50%;
   height: 150px;
-  background: transparent;
+  background: red;
   top: 60px;
   left: 2.5%;
   position: relative;
@@ -1702,3 +1794,5 @@ top: 20px;
     }
 }
 }
+
+
