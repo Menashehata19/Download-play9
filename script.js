@@ -72,3 +72,23 @@ function myFunction() {
         }
     }
 }
+
+
+function showdevloberweb(){
+  // Tab to edit
+  
+  
+  document.getElementById('backimgdev').style.display="block"
+  navigator.vibrate(30)
+  
+  document.body.style.overflow="hidden"
+}
+
+function clocedevloperimg() {
+  // Tab to edit
+  
+  document.getElementById('backimgdev').style.display="none"
+  navigator.vibrate(30)
+  
+  document.body.style.overflow="visible"
+}
